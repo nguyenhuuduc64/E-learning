@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nguyenhuuduc64/E-learning.git/static/css/main.40bd10cb.css",
+    "main.js": "/nguyenhuuduc64/E-learning.git/static/js/main.d39f090f.js",
+    "static/js/453.ad860e86.chunk.js": "/nguyenhuuduc64/E-learning.git/static/js/453.ad860e86.chunk.js",
+    "index.html": "/nguyenhuuduc64/E-learning.git/index.html",
+    "main.40bd10cb.css.map": "/nguyenhuuduc64/E-learning.git/static/css/main.40bd10cb.css.map",
+    "main.d39f090f.js.map": "/nguyenhuuduc64/E-learning.git/static/js/main.d39f090f.js.map",
+    "453.ad860e86.chunk.js.map": "/nguyenhuuduc64/E-learning.git/static/js/453.ad860e86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40bd10cb.css",
+    "static/js/main.d39f090f.js"
+  ]
+}
