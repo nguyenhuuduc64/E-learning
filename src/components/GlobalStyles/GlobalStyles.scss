@@ -3,13 +3,23 @@
 
 :root {
     --primary: #00aff0;
-    --hover-color: gray;
+    --header-color: #51b7ff;
+    --hover-color: #51b7ff;
+    --sidebar-color1: rgb(179, 179, 179);
+    --sidebar-color2: rgb(208, 208, 208);
+    --background-content: #f1f1f1;
+    --font-color-white: #fff;
+    --font-color-blue: #51b7ff;
+    --background-subnav: white;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body {
+    background-color: var(--background-content);
 }
 html {
     font-family: 'Noto Sans', sans-serif;
@@ -55,7 +65,7 @@ html *::-webkit-scrollbar-track {
 .content {
     flex: 1;
     width: var(--default-layout-width);
-    height: 2000px;
+
     margin-top: 60px;
 }
 

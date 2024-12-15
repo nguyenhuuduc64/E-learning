@@ -1,37 +1,44 @@
 import * as React from 'react';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import ShowBtn from '../../../ShowBtn';
+import DesmosGraph from '../../../DesmosGraph';
 import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import LongMenu from '../../../LongMenu';
 
 const cx = classNames.bind(styles);
 
 function Header() {
+    let current_user = true;
     return (
         <header className={cx('wrapper')}>
-            {/* logo*/}
-            <img
-                src="https://inkythuatso.com/uploads/images/2021/11/logo-ctu-inkythuatso-01-09-14-23-02.jpg"
-                alt="logo"
-                className={cx('logo')}
-            />
-
-            <div className={cx('title')}>
+            <div>
                 <div>
-                    <h2 className={cx('title-main')}>CNT</h2>
-                    <h4>E-learning</h4>
+                    {/*logo */}
+                    {/*name */}
+                </div>
+
+                <div className={cx('wrapper__user-panel')}>
+                    {current_user ? (
+                        <>
+                            <p style={{ fontWeight: 'bolder' }}>{'Nguyễn Hữu Đức'}</p>
+                            <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+                            <LongMenu />
+                        </>
+                    ) : (
+                        <>
+                            <a style={{ fontWeight: 'bolder' }}>{'Đăng nhập'}</a>
+                        </>
+                    )}
                 </div>
             </div>
-            {/*search*/}
-            {/*menu */}
-            <button className={cx('more-btn')}>
-                <LongMenu />
-            </button>
+
+            <div className={cx('wrapper__subnav')}>
+                <ShowBtn name="Đồ thị" color="--sidebar-color1">
+                    <DesmosGraph />
+                </ShowBtn>
+            </div>
         </header>
     );
 }

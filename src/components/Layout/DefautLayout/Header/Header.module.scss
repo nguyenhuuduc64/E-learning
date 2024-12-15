@@ -1,6 +1,34 @@
+:root {
+    --header-color: #51b7ff;
+}
 .wrapper {
-    padding: 20px;
     display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--header-color);
+
+    &__user-panel {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        justify-content: end;
+
+        & > * {
+            margin: 0 10px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__subnav {
+        width: 50vw;
+        height: 50px;
+        background-color: var(--background-subnav);
+        margin: 0 auto;
+        border-radius: 0 0 10px 10px;
+    }
 }
 .title {
     width: 100%;

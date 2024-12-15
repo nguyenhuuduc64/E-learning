@@ -1,0 +1,16 @@
+:root {
+    --background-sizebar: #fff;
+}
+.wrapper {
+    width: 20%;
+    background-color: var(--background-sizebar);
+    height: calc(100vh - 60px);
+}
+
+.navbar__container {
+}
+
+.items {
+    text-decoration: none;
+    color: gray;
+}
