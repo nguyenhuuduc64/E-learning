@@ -4,9 +4,8 @@
     font-size: 18px;
     padding-left: 20px;
     line-height: 40px;
-
+    border-radius: 5px;
     &:hover {
         cursor: pointer;
-        background-color: var(--hover-color);
     }
 }

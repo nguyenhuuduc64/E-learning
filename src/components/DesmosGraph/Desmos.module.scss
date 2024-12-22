@@ -4,3 +4,29 @@
     position: relative;
     z-index: 2;
 }
+.desmos__header {
+    display: flex;
+    height: 63px;
+
+    &__title {
+        flex: 1;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 30px;
+        background-color: gray;
+        line-height: 63px;
+        height: 100%;
+    }
+    &__close {
+        width: 63px;
+        height: 63px;
+        font-size: 30px;
+        line-height: 63px;
+        text-align: center;
+        background-color: gray;
+    }
+    &__close:hover {
+        background-color: rgba(128, 128, 128, 0.615);
+        cursor: pointer;
+    }
+}

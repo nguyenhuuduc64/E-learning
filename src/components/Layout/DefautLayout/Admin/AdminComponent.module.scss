@@ -1,0 +1,14 @@
+:root {
+    --background-homework: #ffffff;
+}
+
+.wrapper {
+    width: 70%;
+    height: 80vh;
+    border-radius: 20px;
+    background-color: var(--background-homework);
+    position: absolute;
+    top: 15vh;
+    right: 5vw;
+    z-index: 1;
+}

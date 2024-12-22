@@ -6,11 +6,13 @@ import DesmosGraph from '../../../DesmosGraph';
 import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
 import LongMenu from '../../../LongMenu';
+import { useLocation } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
 function Header() {
     let current_user = true;
+    const location = useLocation();
     return (
         <header className={cx('wrapper')}>
             <div>
@@ -33,12 +35,13 @@ function Header() {
                     )}
                 </div>
             </div>
-
-            <div className={cx('wrapper__subnav')}>
-                <ShowBtn name="Đồ thị" color="--sidebar-color1">
-                    <DesmosGraph />
-                </ShowBtn>
-            </div>
+            {location.pathname != '/admin' && (
+                <div className={cx('wrapper__subnav')}>
+                    <ShowBtn name="Đồ thị" color="--sidebar-color1">
+                        <DesmosGraph />
+                    </ShowBtn>
+                </div>
+            )}
         </header>
     );
 }
