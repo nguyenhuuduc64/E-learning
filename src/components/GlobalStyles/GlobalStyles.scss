@@ -11,12 +11,12 @@
     --font-color-white: #fff;
     --font-color-blue: #51b7ff;
     --background-subnav: white;
+    --hover-gray: rgb(214, 212, 212);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 body {
     background-color: var(--background-content);

@@ -11,4 +11,25 @@
     top: 20vh;
     right: 5vw;
     z-index: 1;
+    overflow: hidden;
+}
+
+.normal-style {
+    color: gray;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.table {
+    width: 100%;
+}
+.table-header {
+    background-color: var(--header-color);
+}
+.hover:hover {
+    background-color: var(--hover-gray) !important;
 }

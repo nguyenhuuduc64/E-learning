@@ -18,7 +18,7 @@ function Sidebar() {
         <div className={cx('wrapper')}>
             <div className={cx('navbar__container')}>
                 <nav>
-                    <ul>
+                    <div>
                         {sidebarItems.map((route, index) => {
                             if (route.title)
                                 return (
@@ -28,14 +28,19 @@ function Sidebar() {
                                         style={{ backgroundColor: index == clickIndex ? '#51b7ff' : 'white' }}
                                     >
                                         <Link to={route.path} className={cx('items')} ref={refItem}>
-                                            <p style={{ color: clickIndex == index ? 'white' : '#51b7ff' }}>
+                                            <p
+                                                style={{
+                                                    color: clickIndex == index ? 'white' : '#51b7ff',
+                                                    paddingLeft: '20px',
+                                                }}
+                                            >
                                                 {route.title}
                                             </p>
                                         </Link>
                                     </Wrapper>
                                 );
                         })}
-                    </ul>
+                    </div>
                 </nav>
             </div>
         </div>
