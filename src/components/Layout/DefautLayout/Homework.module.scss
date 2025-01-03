@@ -1,35 +1,68 @@
-:root {
-    --background-homework: #ffffff;
-}
-
 .wrapper {
     width: 70%;
-    height: 70vh;
-    border-radius: 20px;
-    background-color: var(--background-homework);
+    border-radius: 10px;
+    background-color: transparent;
     position: absolute;
     top: 20vh;
     right: 5vw;
+    display: flex;
+    flex-direction: column;
     z-index: 1;
     overflow: hidden;
 }
 
-.normal-style {
-    color: gray;
-    text-decoration: none;
-}
-
 .content {
+    height: 70vh;
     display: flex;
     justify-content: space-evenly;
+    overflow-y: auto;
+}
+.content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & > div {
+        width: 49%;
+        padding: 25px 20px;
+    }
+}
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+.content-component {
+    max-height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.337);
 }
 
 .table {
     width: 100%;
+    table-layout: auto; /* Đảm bảo bảng không vượt quá kích thước */
+    border-collapse: collapse; /* Gộp các đường viền của các ô */
 }
+.table-body {
+    overflow-y: auto; /* Kích hoạt thanh cuộn dọc */
+    width: 100%;
+    max-height: 70vh;
+}
+.table thead {
+    position: sticky;
+    top: 0; /* Vị trí cố định so với đầu của bảng */
+    z-index: 2; /* Đảm bảo header nằm trên nội dung */
+    background-color: var(--header-color); /* Nền để header không bị trong suốt */
+}
+
 .table-header {
     background-color: var(--header-color);
 }
+
 .hover:hover {
     background-color: var(--hover-gray) !important;
+}
+
+table td {
+    border: 2px solid var(--border-color);
 }

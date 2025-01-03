@@ -7,7 +7,6 @@ import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
 import LongMenu from '../../../LongMenu';
 import { useLocation } from 'react-router-dom';
-
 const cx = classNames.bind(styles);
 
 function Header() {
@@ -15,12 +14,12 @@ function Header() {
     const location = useLocation();
     return (
         <header className={cx('wrapper')}>
-            <div>
+            <div className={cx('wrapper__nav')}>
                 <div>
-                    {/*logo */}
-                    {/*name */}
+                    <a href="/" className={cx('wrapper__logo')}>
+                        <span style={{ color: 'white' }}>e</span>-Learning
+                    </a>
                 </div>
-
                 <div className={cx('wrapper__user-panel')}>
                     {current_user ? (
                         <>

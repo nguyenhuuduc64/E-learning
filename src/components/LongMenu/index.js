@@ -10,18 +10,7 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
-const options = [
-    {
-        title: 'Ngôn ngữ',
-        children: {
-            option: ['English', 'Tiếng Việt'],
-        },
-    },
-    {
-        title: 'Bài tập về nhà',
-        to: '/homework',
-    },
-];
+const options = [];
 
 const ITEM_HEIGHT = 48;
 

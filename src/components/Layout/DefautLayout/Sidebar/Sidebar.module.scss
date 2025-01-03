@@ -5,6 +5,8 @@
     width: 20%;
     background-color: var(--background-sizebar);
     height: calc(100vh - 60px);
+    position: fixed;
+    top: 60px;
 }
 
 .navbar__container {
